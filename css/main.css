@@ -1,0 +1,155 @@
+/* <section id="equalizer_landing_page">
+
+<header>
+  <h1>equalizer</h1>
+  <img src="./assets/logo.svg" alt="">
+</header>
+
+<section class="content">
+  <h1>We make your music sound extraordinary.</h1>
+  <p> 
+    A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+    way your music sounds with a professional grade parametric EQ & volume mixer. Control 
+    bass, mids, treble, gain control, reverb, and more!
+  </p>
+  <main>
+  </main>
+</section>
+
+<footer>
+  <img src="./assets/logo.svg" alt="">
+  <div id="copyright"></div>
+  <div id="oauth"></div>
+</footer>
+
+</section> */
+
+#equalizer_landing_page {
+    display : flex;
+    flex-direction : column;
+    margin : 0 auto;
+    padding : 32px 0 60px;
+    width : 1100px;
+
+}
+
+/* HEADER */
+header {
+    
+}
+
+header > h1 {
+    font-size : 0;
+    opacity : 0;
+}
+
+header > img {
+    
+}
+
+
+/* CONTENT */
+.content {
+}
+
+.content h1 {
+    font-size : 88px;
+    font-weight : 700;
+    width : 1015px;
+    line-height: 88px;
+}
+
+.content p {
+    font-size : 20px;
+    width : 825px;
+    line-height: 34px;
+}
+
+.content main {
+    height : 600px;
+    background-color : #191826;
+    border-radius : 12px;
+    position : relative;
+    margin-top : 300px;
+    margin-bottom : 200px;
+}
+
+.content main #img_app {
+    width : 312px;
+    height : 642px;
+    position : absolute;
+    left : 102px;
+    top : -213px;
+}
+
+.content main .download_box {
+    background-color : #FA7453;
+    position : absolute;
+    width : 446px;
+    height : 625px;
+    left : 596px;
+    top : 90px;
+    color : #fff;
+    padding : 58px 59px 48px 54px;
+    box-sizing: border-box;
+    border-radius : 12px;
+}
+
+.content main .download_box h2 {
+    font-size : 40px;
+    font-weight : 700;
+    width : 333px;
+}
+
+.content main .download_box p {
+    width : 333px;
+    font-size : 20px;
+    font-weight : 400;
+
+}
+
+.btn {
+    width : 100%;
+    height : 61px;
+    border-radius : 12px;
+    text-align :center;
+    box-sizing: border-box;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 16px;
+}
+
+.btn::before {
+    content : "";
+    background-size : 100%;
+    background-repeat : no-repeat;
+    margin-right : 5px;
+}
+
+.btn#ios {
+    background-color : #000;
+    color : #fff;
+}
+
+.btn#ios::before {
+    width : 17.08px;
+    height : 20px;
+    background-image : url("../starter-code/assets/icon-apple.svg");
+}
+
+.btn#aos {
+    background-color: #fff;
+    color : #000;
+}
+
+.btn#aos::before {
+    width : 16.7px;
+    height : 20px;
+    background-image : url("../starter-code/assets/icon-android.svg")
+}
+
+/* FOOTER */
+footer {
+
+}
