@@ -1,36 +1,10 @@
-/* <section id="equalizer_landing_page">
-
-<header>
-  <h1>equalizer</h1>
-  <img src="./assets/logo.svg" alt="">
-</header>
-
-<section class="content">
-  <h1>We make your music sound extraordinary.</h1>
-  <p> 
-    A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-    way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-    bass, mids, treble, gain control, reverb, and more!
-  </p>
-  <main>
-  </main>
-</section>
-
-<footer>
-  <img src="./assets/logo.svg" alt="">
-  <div id="copyright"></div>
-  <div id="oauth"></div>
-</footer>
-
-</section> */
-
 * {
     box-sizing : border-box;
 }
 
 body {
-    padding : 0px;
-    margin : 0px;
+    margin : 0;
+    padding : 0;
     width : 1440px;
     background-image : url("../starter-code/assets/bg-main-desktop.png");
     background-repeat : no-repeat;
@@ -266,4 +240,177 @@ footer .sns ul li:nth-child(2) a::before {
 }
 footer .sns ul li:nth-child(3) a::before {
     background-image : url("../starter-code/assets/icon-twitter.svg");
+}
+
+
+@media screen and (max-width : 1024px) {
+    body {
+        width : 768px;
+        background-image : url("../starter-code/assets/bg-main-tablet.png");
+        background-repeat : no-repeat;
+        background-size :100%;
+        background-position : -254px -112px;
+    }
+    #equalizer_landing_page {
+        width : 696px;
+    }
+
+    .content h1 {
+        font-size : 64px;
+        font-weight : bold;
+        width : 520px;
+        line-height: 64px;
+        margin-bottom : 28px;
+    }
+    
+    .content p {
+        font-size : 18px;
+        width : 514px;
+        line-height: 28px;
+    }
+
+    #equalizer_landing_page::after {
+        content : "";
+        width : 266.67px;
+        height : 400px;
+        display : block;
+        position : absolute;
+        top : -32px;
+        right : 0;
+        z-index : -10;
+        background-size: cover;
+    }
+
+
+    .content main {
+        width : 696px;
+        height : 600px;
+        position : relative;
+        margin-top : 250px;
+        margin-bottom : 200px;
+    }
+    
+    .content main::after {
+        content : "";
+        width : 280px;
+        height : 420px;
+        top : -40px;
+        left : 280px;
+        background-image : url("../starter-code/assets/bg-pattern-2.svg");
+        background-size : cover;
+        z-index: 0;
+    }
+    
+    .content main #img_app {
+        width : 270.21px;
+        height : 556px;
+        position : absolute;
+        left : 102px;
+        top : -213px;
+        z-index: 1;
+    }
+
+
+    .content main .download_box {
+        width : 399px;
+        left : 272px;
+        top : 150px;
+        padding : 58px 59px 48px 54px;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        width : 375px;
+        background-image : url("../starter-code/assets/bg-main-mobile.png");
+        background-repeat : no-repeat;
+        background-size :100%;
+        background-position : -254px -112px;
+    }
+
+    #equalizer_landing_page {
+        margin : 0 auto;
+    }
+
+    .content h1 {
+        font-size : 40px;
+        font-weight : bold;
+        width : 327px;
+        line-height: 48px;
+        margin-bottom : 28px;
+    }
+    
+    .content p {
+        font-size : 16px;
+        width : 327px;
+        line-height: 26px;
+    }
+
+    #equalizer_landing_page::after {
+        display : none;
+    }
+
+    .content main {
+        width : 375px;
+        height : 926px;
+        position : relative;
+        /* margin-top : 250px;
+        margin-bottom : 200px; */
+    }
+    
+    .content main::after {
+        content : "";
+        width : 280px;
+        height : 420px;
+        top : 0;
+        left : 0;
+        right : 0;
+        margin : 0 auto;
+        background-image : url("../starter-code/assets/bg-pattern-2.svg");
+        background-size : cover;
+        z-index: 0;
+    }
+    
+    .content main #img_app {
+        width : 208.97px;
+        height : 430px;
+        position : absolute;
+        left : 0;
+        top : -98px;
+        right : 0;
+        margin : 0 auto;
+        z-index: 1;
+    }
+
+
+    .content main .download_box {
+        width : 375px;
+        left : 0;
+        top : 332px;
+        right : 0;
+        /* padding : 58px 59px 48px 54px; */
+        padding : 48px 36px;
+        /* padding : 0; */
+        box-sizing : border-box;
+        margin-bottom : 0;
+    }
+
+    .content main .download_box h2 {
+        width : 302px;
+        font-size : 32px;
+        font-weight : bold;
+        line-height : 40px;
+    }
+
+    .content main .download_box p {
+        width : 302px;
+        font-size : 18px;
+        line-height : 28px;
+        font-weight : normal;
+    }
+
+    .btn {
+        width : 296px;
+    }
 }
